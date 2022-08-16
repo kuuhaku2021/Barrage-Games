@@ -1,0 +1,188 @@
+#g_navi {
+	background: #2e1200;
+}
+#g_navi ul {
+	overflow: hidden;
+	margin: 0 auto;
+	padding: 0 3%;
+	width: 94%;
+	max-width: 960px;
+	list-style-type: none;
+}
+	#g_navi ul li {
+		position: relative;
+		float: left;
+		width: 20%;
+	}
+	#g_navi ul li:first-child::before {
+		position: absolute;
+		display: block;
+		content: "";
+		top: 25%;
+		left: 0px;
+		width: 1px;
+		height: 50%;
+		background-color: #804020;
+	}
+	#g_navi ul li::after {
+		position: absolute;
+		display: block;
+		content: "";
+		top: 25%;
+		right: 0px;
+		width: 1px;
+		height: 50%;
+		background-color: #804020;
+	}
+		#g_navi ul li a {
+			display: block;
+			padding: 17px 10px;
+			color: #fff;
+			text-align: center;
+			text-decoration: none;
+		}
+		#g_navi ul li a:hover {
+			background-color: #472108;
+		}
+.logo {
+padding: 0px 100px;
+}
+
+.Title {
+  position: relative;
+  padding: 1rem .5rem;
+}
+
+.Title:before,
+.Title:after {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  content: '';
+  background-image: -webkit-gradient(linear, right top, left top, from(#804020), to(#804020));
+  background-image: -webkit-linear-gradient(right, #804020 0%, #804020 100%);
+  background-image: linear-gradient(to left, #804020 0%, #804020 100%);
+}
+
+.Title:before {
+  top: 0;
+}
+
+.Title:after {
+  bottom: 0;
+}
+
+.M1 {
+  position: relative;
+  padding: 1rem .5rem;
+}
+
+.M1:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  content: '';
+  border-radius: 3px;
+  background-image: -webkit-gradient(linear, right top, left top, from(#804020), to(#804020));
+  background-image: -webkit-linear-gradient(right, #804020 0%, #804020 100%);
+  background-image: linear-gradient(to left, #804020 0%, #804020 100%);
+}
+
+.flex_box {
+    display: flex;              /* フレックスボックスにする */
+}
+
+.flex_box {
+    background-color: #eee;     /* 背景色指定 */
+    padding:  10px;             /* 余白指定 */
+}
+ 
+.flex_item {
+    padding: 10px;
+    color:  #fff;               /* 文字色 */
+    margin:  50px;              /* 外側の余白 */
+    border-radius:  5px;        /* 角丸指定 */
+}
+ 
+.flex_item:nth-child(1) {
+    background-color:  #2196F3; /* 背景色指定 */
+}
+ 
+.flex_item:nth-child(2) {
+    background-color:  #4CAF50; /* 背景色指定 */
+}
+ 
+.flex_item:nth-child(3) {
+    background-color: #3F51B5; /* 背景色指定 */
+}
+ 
+.flex_item:nth-child(4) {
+    background-color:  #00BCD4; /* 背景色指定 */
+}
+
+.Top {
+  padding: 1rem 3rem;
+  -webkit-transform: skew(-15deg);
+  transform: skew(-15deg);
+  color: #fff;
+  background-image: -webkit-gradient(linear, left top, right top, from(#734e30), to(#734e30));
+  background-image: -webkit-linear-gradient(left, #734e30 0%, #734e30 100%);
+  background-image: linear-gradient(to right, #734e30 0%, #734e30 100%);
+}
+
+/*まずはお決まりのボックスサイズ算出をborer-boxに */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+/*基本と主な共通部分は省略*/
+
+a.btn-gradient {
+  -webkit-transform: skew(-15deg);
+  transform: skew(-15deg);
+  color: #fff;
+  border-radius: 0;
+  background-image: -webkit-gradient(linear, left top, right top, from(#8d6a47), to(#aa8055));
+  background-image: -webkit-linear-gradient(left, #8d6a47 0%, #aa8055 100%);
+  background-image: linear-gradient(90deg, #8d6a47 0%, #aa8055 100%);
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+
+a.btn-gradient:hover {
+  -webkit-transform: skew(0);
+  transform: skew(0);
+  color: #fff;
+  -webkit-box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+  box-shadow: 0 2px 3px rgba(0, 0, 0, .1);
+}
