@@ -93,6 +93,7 @@ padding: 0px 100px;
 
 .flex_box {
     display: flex;              /* フレックスボックスにする */
+    flex-flow: column;
 }
 
 .flex_box {
@@ -105,7 +106,6 @@ padding: 0px 100px;
     color:  #fff;               /* 文字色 */
     margin:  50px;              /* 外側の余白 */
     border-radius:  5px;        /* 角丸指定 */
-    flex-flow: column;
 }
  
 .flex_item:nth-child(1) {
