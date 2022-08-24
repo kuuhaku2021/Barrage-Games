@@ -5,6 +5,12 @@ body {
   height: 100vh;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+h1 {
+  font-family: 'Caveat', cursive;
+}
+
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
