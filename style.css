@@ -69,6 +69,12 @@ padding: 0px 100px;
   background-image: linear-gradient(to left, #804020 0%, #804020 100%);
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+h1 {
+  font-family: 'Caveat', cursive;
+}
+
 .Title:before {
   top: 0;
 }
@@ -208,10 +214,4 @@ a.btn-gradient:hover {
   border: solid 2px #c1cbff;
   border-right: solid 2px #5c659d;
   border-bottom: solid 2px #5c659d;
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
-
-.Title {
-  font-family: 'Caveat', cursive;
 }
