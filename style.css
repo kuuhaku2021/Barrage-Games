@@ -209,3 +209,9 @@ a.btn-gradient:hover {
   border-right: solid 2px #5c659d;
   border-bottom: solid 2px #5c659d;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+.Title {
+  font-family: 'Caveat', cursive;
+}
