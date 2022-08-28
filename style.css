@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 
-h1 {
-  font-family: 'Caveat', cursive;
+.Title {
+  font-family: 'Comic Sans', cursive;
 }
 
 p {
