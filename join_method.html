@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<link rel="icon" type="image/png" sizes="180x180" href="https://picture.freesia.ml/files/202208142119031452497867.jpg">
+	<meta name="viewport" content="width=device-width">
+	<meta charset='utf-8' />
+	<meta name="description" content="Barrage Gamesのロビーサーバーへの参加方法を載せているサイトです。" />
+	<link rel="stylesheet" type="text/css" media="screen" href="style.css">
+	<title>Barrage Games -参加方法-</title>
+</head>
+<body>
+<script src="js/header.js"></script>
+<h1 class="Top">参加方法</h1>
+	<p>ここは、BarrageGamesロビーサーバーへの参加方法が書いてある場所です。サーバーに入るときは、<a class="link" href="terms.html">ルール</a>にかいてあることを良く読んで、サーバーを楽しみましょう。</p>
+	<p>Java Edition: <input id="copyJava" type="text" value="lobby.barragegames.net:25565" readonly> <button onclick="copyJava()">コピー</button></p>
+	<p>Bedrock Edition: <input id="copyBedrock" type="text" value="lobby.barragegames.net:41011" readonly> <button onclick="copyBedrock()">コピー</button></p><br><br>
+	<p>統合版限定クイック参加ボタン-><a href="minecraft://?addExternalServer=BarrageGames|lobby.barragegames.net:41011" class="btn-play">参加</a></p>
+	<br><p>このサーバーアドレスは、Barrage Gamesのロビーサーバーへ参加するためのアドレスです。各サーバーで別アドレスが使えるように申請することもできますが、ロビーサーバーからは全てのサーバーに接続することが可能となります。</p>
+	<style>
+	.btn-play {
+		display: inline-block;
+		padding: 0.5em 5em;
+		text-decoration: none;
+		background-color: #3e8a4c;
+		box-shadow: 0px 0px 0px 2px #0a0a0a;
+		color: #fff;
+		border: solid 2px #316d42;
+		border-top: solid 2px #64cb55;
+	  }
+	  
+	  .btn-play:hover {
+		background-color: #429255;
+	  }
+	  
+	  .btn-play:active {
+		box-shadow: 0px 0px 0px 2px #fff;
+	  }
+	  </style>
+
+    <script>
+        function copyJava() {
+            // コピー対象をJavaScript上で変数として定義する
+            var copyTarget = document.getElementById("copyJava");
+
+            // コピー対象のテキストを選択する
+            copyTarget.select();
+
+            // 選択しているテキストをクリップボードにコピーする
+            document.execCommand("Copy");
+
+        }
+    </script>
+    <script>
+        function copyBedrock() {
+            // コピー対象をJavaScript上で変数として定義する
+            var copyTarget = document.getElementById("copyBedrock");
+
+            // コピー対象のテキストを選択する
+            copyTarget.select();
+
+            // 選択しているテキストをクリップボードにコピーする
+            document.execCommand("Copy");
+
+        }
+    </script>
+</body>
+</html>

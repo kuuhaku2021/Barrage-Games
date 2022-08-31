@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<html lang="ja">
+<head>
+  <link rel="icon" type="image/png" sizes="180x180" href="https://picture.freesia.ml/files/202208142119031452497867.jpg">
+  <meta name="viewport" content="width=device-width">
+  <meta charset='utf-8' />
+  <meta name="description" content="お問い合わせ方法を載せている場所です。" />
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css">
+  <title>Barrage Games -お問い合わせ-</title>
+</head>
+<body>
+<script src="js/header.js"></script>
+<h1 class="Top">お問い合わせ</h1>
+<p>お問い合わせはDiscord・Twitter・メールで受け付けています。</p>
+<h1 class="contact">申請方法</h1>
+<h2 class="tag">Discord</h2>
+<p>1.Discordサーバーのカテゴリ「お問い合わせ」の中にある、チケットチャンネルを選択します。</p>
+<p>2.Create ticketをクリック。</p>
+<p>3.件名・MinecraftID・内容等を記入して送信してください。</p>
+<p>4.運営がチェックした後、対応します。</p>
+<h2 class="tag">Twitter</h2>
+<p>1.Twitterのアカウント<a href="https://twitter.com/BarrageGames">@BarrageGames</a>のDMを見てください。</p>
+<p>2.件名・MinecraftID・DiscordID・内容等を記入して送信してください。</p>
+<p>3.運営がチェックした後、対応します。</p>
+<h2 class="tag">メール</h2>
+<p>1.メールアドレス: <input id="copyMail" type="text" value="support@mail.barragegames.net" readonly>へアクセスしてください。</p>
+<button onclick="copyMail()">メールアドレスをコピー</button>
+<p>2.件名にはBarrageGamesと書き(スパム防止のため)、本文に件名・MinecraftID・DiscordID・内容等を記入して送信してください。</p>
+<p>3.Developerがチェックしたあと、対応します。</p>
+<h1 class="contact">注意事項</h1>
+	<p>1.メールでのご連絡は、対応が遅れる場合があります。</p>
+	<p>2.Discordは、運営が毎日のように見ているため、対応が早くなります。</p>
+	<p>3.スパム等を行った場合、処罰が行われる場合があります。</p>
+    <script>
+        function copyMail() {
+            // コピー対象をJavaScript上で変数として定義する
+            var copyTarget = document.getElementById("copyMail");
+
+            // コピー対象のテキストを選択する
+            copyTarget.select();
+
+            // 選択しているテキストをクリップボードにコピーする
+            document.execCommand("Copy");
+
+        }
+    </script>
+<style>
+  h2 {
+	padding: 1rem 2rem;
+	border-left: 5px solid #000;
+	background: #f4f4f4;
+  }
+
+  .btn--orange,
+  .contact {
+	  border-bottom: 3px solid #000;
+  }
+
+	</style>
+</body>
+</html>
