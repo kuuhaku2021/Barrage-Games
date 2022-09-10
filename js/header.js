@@ -1,1 +1,9 @@
-document.write('<body><header><table><tr><td><img class="logo" src="picture/logo.webp" alt="ロゴ" width=100px height=100px></td><td><h1 class="Title">Barrage Games</h1></td></tr></table><nav id="g_navi"><ul><li><a href="index.html">ホーム</a></li><li><a href="terms.html">ルール</a></li><li><a href="join_method.html">参加方法</a></li><li><a href="discord.html">Discord</a></li><li><a href="contact.html">お問い合わせ</a></li></ul></nav></header>');
+function header(){
+  $.ajax({
+      url: "header.html",
+      cache: false,
+      success: function(html){
+          document.write(html);
+      }
+  });
+}
