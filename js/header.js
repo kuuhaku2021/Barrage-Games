@@ -1,9 +1,1 @@
-function header(){
-  $.ajax({
-      url: "header.html",
-      cache: false,
-      success: function(html){
-          document.write(html);
-      }
-  });
-}
+document.write('<body><header><table><tr><td><imgclass="logo"src="picture/logo.webp"alt="ロゴ"width=100pxheight=100px></td><td><h1class="Title">BarrageGames</h1></td></tr></table><navid="g_navi"><ul><li><ahref="index.html">ホーム</a></li><li><ahref="terms.html">ルール</a></li><li><ahref="join_method.html">参加方法</a></li><li><ahref="discord.html">Discord</a></li><li><ahref="contact.html">お問い合わせ</a></li></ul></nav></header>');
